@@ -1,0 +1,78 @@
+*operator-mdurl.txt*	Operator to change url to markdown url
+
+Author: vimtaku <vimtaku@gmail.com>
+Updated : 2014-03-08
+Version : 0.0.1
+License : MIT license {{{
+	Permission is hereby granted, free of charge, to any person obtaining
+	a copy of this software and associated documentation files (the
+	"Software"), to deal in the Software without restriction, including
+	without limitation the rights to use, copy, modify, merge, publish,
+	distribute, sublicense, and/or sell copies of the Software, and to
+	permit persons to whom the Software is furnished to do so, subject to
+	the following conditions:
+	The above copyright notice and this permission notice shall be
+	included in all copies or substantial portions of the Software.
+	
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+	EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+	MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+	IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+	CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+	TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+	SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+}}}
+
+==============================================================================
+CONTENTS					*vim-operator-mdurl-contents*
+INTRODUCTION					*vim-operator-mdurl-introduction*
+REQUREMENT					*vim-operator-mdurl-requirement*
+INTERFACE					*vim-operator-mdurl-interface*
+ KEY MAPPINGS					*vim-operator-mdurl-key-mappings*
+ MAPPING EXAMPLE				*vim-operator-mdurl-mapping-example*
+CHANGELOG					*vim-operator-mdurl-changelog*
+
+==============================================================================
+INTRODUCTION					*vim-operator-mdurl-introduction*
+
+operator-mdurl is a Vim plugin to provide operator
+to change from url to markdown format url.
+
+==============================================================================
+REQUREMENT					*vim-operator-mdurl-requirement*
+
+- Vim 7.2 or later
+- |operator-user| 0.0.5 or later (vimscript#2692)
+
+
+==============================================================================
+INTERFACE					*vim-operator-mdurl-interface*
+
+------------------------------------------------------------------------------
+KEY MAPPINGS					*vim-operator-mdurl-key-mappings*
+
+<Plug>(operator-mdurl)					<Plug>(operator-mdurl)
+		change url to operator format.
+		example) http://example.com to [http://example.com](http://example.com)
+
+<Plug>(operator-mdurlp)					<Plug>(operator-mdurlp)
+		Add url link to word from yanked url string.
+		unnamed register is used.
+		For example, now you have yanked http://example.com,
+		and you have a word like belows
+		example link is here.
+		You can create link by this mappings, and after, you can see
+		[example](http://example.com) link is here.
+
+
+MAPPING EXAMPLE					*vim-operator-mdurl-mapping-example*
+    map L <Plug>(operator-mdurl)
+    map M <Plug>(operator-mdurlp)
+
+==============================================================================
+CHANGELOG					*vim-operator-changelog*
+
+2014-03-08 v0.0.1 Initial commit.
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
