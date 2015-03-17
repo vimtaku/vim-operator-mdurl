@@ -15,7 +15,7 @@ function! operator#mdurl#do_p(motion_wise)
   let tmp_reg = @"
   try
     execute 'normal!' '`['.visual_command.'`]d'
-    execute 'normal! a[' . @" . ']('. paste .')'
+    execute 'normal! a[' . @" . ']('. paste . ' "'. @" .'")'
   finally
     call s:restore_tmp_register(tmp_reg)
   endtry
