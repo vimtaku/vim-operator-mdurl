@@ -24,14 +24,14 @@ License : MIT license {{{
 }}}
 
 ==============================================================================
-CONTENTS					*vim-operator-mdurl-contents*
-INTRODUCTION					*vim-operator-mdurl-introduction*
-REQUREMENT					*vim-operator-mdurl-requirement*
-INTERFACE					*vim-operator-mdurl-interface*
- KEY MAPPINGS					*vim-operator-mdurl-key-mappings*
- MAPPING EXAMPLE				*vim-operator-mdurl-mapping-example*
-SEE ALSO					*vim-operator-mdurl-see-also*
-CHANGELOG					*vim-operator-mdurl-changelog*
+CONTENTS					|vim-operator-mdurl-contents|
+INTRODUCTION					|vim-operator-mdurl-introduction|
+REQUREMENT					|vim-operator-mdurl-requirement|
+INTERFACE					|vim-operator-mdurl-interface|
+ KEY MAPPINGS					|vim-operator-mdurl-key-mappings|
+ MAPPING EXAMPLE				|vim-operator-mdurl-mapping-example|
+SEE ALSO					|vim-operator-mdurl-see-also|
+CHANGELOG					|vim-operator-mdurl-changelog|
 
 ==============================================================================
 INTRODUCTION					*vim-operator-mdurl-introduction*
